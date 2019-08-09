@@ -1,0 +1,22 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port reset_rtl -pg 1 -y -80 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 0 -defaultsOSRD
+preplace port IO -pg 1 -y -80 -defaultsOSRD
+preplace port ROM -pg 1 -y -60 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -y -10 -defaultsOSRD
+preplace inst TD4_vanilla_0 -pg 1 -lvl 2 -y -70 -defaultsOSRD
+preplace netloc TD4_vanilla_0_ROM 1 2 1 N
+preplace netloc sys_clock_1 1 0 1 NJ
+preplace netloc TD4_vanilla_0_IO 1 2 1 N
+preplace netloc clk_wiz_clk_out1 1 1 1 -50
+preplace netloc reset_rtl_1 1 0 2 -290J -80 N
+levelinfo -pg 1 -310 -140 130 240 -top -480 -bot 200
+",
+}
+{
+   da_board_cnt: "2",
+   da_clkrst_cnt: "1",
+}

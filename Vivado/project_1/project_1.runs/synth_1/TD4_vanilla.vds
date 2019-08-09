@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Jun  7 17:05:43 2019
-# Process ID: 10728
+# Start of session at: Fri Aug  9 15:32:49 2019
+# Process ID: 23736
 # Current directory: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log TD4_vanilla.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TD4_vanilla.tcl
 # Log file: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.runs/synth_1/TD4_vanilla.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19076 
+INFO: Helper process launched with PID 22292 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.141 ; gain = 97.332
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 408.945 ; gain = 96.598
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'TD4_vanilla' [C:/Users/nekha/OneDrive/GitHub/TD4/verilog/TD4_vanilla.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'gen_reg' [C:/Users/nekha/OneDrive/GitHub/TD4/verilog/Basic_elements.sv:1]
@@ -40,21 +40,21 @@ INFO: [Synth 8-226] default block is never used [C:/Users/nekha/OneDrive/GitHub/
 INFO: [Synth 8-6155] done synthesizing module 'vanilla_decoder' (5#1) [C:/Users/nekha/OneDrive/GitHub/TD4/verilog/Vanilla_decoder.sv:1]
 INFO: [Synth 8-6155] done synthesizing module 'TD4_vanilla' (6#1) [C:/Users/nekha/OneDrive/GitHub/TD4/verilog/TD4_vanilla.sv:1]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.125 ; gain = 151.316
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.930 ; gain = 151.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 463.125 ; gain = 151.316
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.930 ; gain = 151.582
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 463.125 ; gain = 151.316
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.930 ; gain = 151.582
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 463.125 ; gain = 151.316
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 463.930 ; gain = 151.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -130,7 +130,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -143,7 +143,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -155,7 +155,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,7 +179,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -192,7 +192,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,25 +204,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -262,11 +262,11 @@ Report Instance Areas:
 |6     |  reg_PC  |inc_reg                 |    12|
 +------+----------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 632.594 ; gain = 320.785
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 633.180 ; gain = 320.832
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -278,9 +278,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 25 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 734.203 ; gain = 435.027
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 736.664 ; gain = 437.324
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.runs/synth_1/TD4_vanilla.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file TD4_vanilla_utilization_synth.rpt -pb TD4_vanilla_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 734.203 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Fri Jun  7 17:06:17 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 736.664 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  9 15:33:14 2019...

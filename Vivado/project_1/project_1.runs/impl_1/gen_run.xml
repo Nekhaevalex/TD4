@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1559916413">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1565354031">
   <File Type="OPT-HWDEF" Name="TD4_vanilla.hwdef"/>
   <File Type="ROUTE-BUS-SKEW" Name="TD4_vanilla_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="TD4_vanilla.dcp"/>
@@ -93,6 +93,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/bd/vanilla/vanilla.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../../../users/nekha/onedrive/github/td4/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="TD4_vanilla"/>
@@ -105,9 +116,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

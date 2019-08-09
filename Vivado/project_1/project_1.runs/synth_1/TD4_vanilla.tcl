@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/nekha/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-13452-DESKTOP-6OPJTB7/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -30,6 +27,7 @@ set_property parent.project_path C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/proje
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+set_property ip_repo_paths c:/users/nekha/onedrive/github/td4 [current_project]
 set_property ip_output_repo c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
