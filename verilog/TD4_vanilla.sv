@@ -16,7 +16,7 @@ module TD4_vanilla
 	inc_reg reg_PC(clk, n_reset, sel_PC, sum, Adr);
 	
 	//source selection
-	mux_4to1(A, B, In, '0, src_sel, src);
+	mux_4to1 mux(A, B, In, '0, src_sel, src);
 	
 	//adder and carry flag
 	adder(src, Im, sum, flag_in);

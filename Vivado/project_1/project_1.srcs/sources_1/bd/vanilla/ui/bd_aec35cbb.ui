@@ -5,15 +5,18 @@
 preplace port reset_rtl -pg 1 -y -80 -defaultsOSRD
 preplace port sys_clock -pg 1 -y 0 -defaultsOSRD
 preplace port IO -pg 1 -y -80 -defaultsOSRD
-preplace port ROM -pg 1 -y -60 -defaultsOSRD
-preplace inst clk_wiz -pg 1 -lvl 1 -y -10 -defaultsOSRD
-preplace inst TD4_vanilla_0 -pg 1 -lvl 2 -y -70 -defaultsOSRD
-preplace netloc TD4_vanilla_0_ROM 1 2 1 N
-preplace netloc sys_clock_1 1 0 1 NJ
-preplace netloc TD4_vanilla_0_IO 1 2 1 N
-preplace netloc clk_wiz_clk_out1 1 1 1 -50
-preplace netloc reset_rtl_1 1 0 2 -290J -80 N
-levelinfo -pg 1 -310 -140 130 240 -top -480 -bot 200
+preplace inst xlslice_0 -pg 1 -lvl 2 -y 120 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 2 -y 230 -defaultsOSRD
+preplace inst TD4_vanilla_0 -pg 1 -lvl 2 -y -40 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 3 -y 70 -defaultsOSRD
+preplace netloc TD4_vanilla_0_Adr 1 2 1 600
+preplace netloc xlslice_1_Dout 1 2 1 560
+preplace netloc sys_clock_1 1 0 3 NJ 0 90 60 580
+preplace netloc TD4_vanilla_0_IO 1 2 2 N -80 N
+preplace netloc blk_mem_gen_0_douta 1 1 2 100 -140 590
+preplace netloc xlslice_0_Dout 1 2 1 570
+preplace netloc reset_rtl_1 1 0 2 NJ -80 90
+levelinfo -pg 1 -320 70 460 880 1000 -top -480 -bot 290
 ",
 }
 {

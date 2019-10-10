@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Aug  9 15:28:55 2019
-# Process ID: 19284
+# Start of session at: Sun Oct  6 01:58:51 2019
+# Process ID: 22176
 # Current directory: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26912 C:\Users\nekha\OneDrive\GitHub\TD4\Vivado\project_1\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8052 C:\Users\nekha\OneDrive\GitHub\TD4\Vivado\project_1\project_1.xpr
 # Log file: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/vivado.log
 # Journal file: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1\vivado.jou
 #-----------------------------------------------------------
@@ -13,30 +13,54 @@ start_gui
 open_project C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.xpr
 update_compile_order -fileset sources_1
 open_bd_design {C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sources_1/bd/vanilla/vanilla.bd}
-set_property location {2 120 44} [get_bd_cells clk_wiz]
-set_property location {0.5 -142 -6} [get_bd_cells clk_wiz]
-set_property location {1 -135 -38} [get_bd_cells clk_wiz]
-set_property location {1 -138 -18} [get_bd_cells clk_wiz]
-set_property location {2 128 -63} [get_bd_cells TD4_vanilla_0]
-set_property location {2 130 -74} [get_bd_cells TD4_vanilla_0]
-set_property location {-329 -76} [get_bd_ports reset_rtl]
-set_property location {1 -141 -8} [get_bd_cells clk_wiz]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {4} CONFIG.Write_Depth_A {16} CONFIG.Read_Width_A {4} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {4} CONFIG.Read_Width_B {4} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+set_property location {3.5 736 -17} [get_bd_cells blk_mem_gen_0]
+set_property location {3 704 61} [get_bd_cells blk_mem_gen_0]
+delete_bd_objs [get_bd_intf_nets TD4_vanilla_0_ROM] [get_bd_intf_ports ROM]
+set_property location {2.5 482 55} [get_bd_cells blk_mem_gen_0]
+set_property location {3.5 526 3} [get_bd_cells blk_mem_gen_0]
+set_property location {3 510 -1} [get_bd_cells blk_mem_gen_0]
+set_property -dict [list CONFIG.Write_Width_A {8} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8}] [get_bd_cells blk_mem_gen_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {3 494 104} [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_WIDTH {4} CONFIG.DIN_TO {0} CONFIG.DIN_FROM {0}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DOUT_WIDTH {7}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_TO {0} CONFIG.DIN_FROM {3} CONFIG.DIN_WIDTH {8} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_0]
+set_property location {3.5 770 66} [get_bd_cells blk_mem_gen_0]
+set_property location {2.5 481 149} [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins xlslice_0/Din]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins TD4_vanilla_0/Im]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
+endgroup
+set_property location {4 648 222} [get_bd_cells xlslice_1]
+set_property location {2 389 124} [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_TO {4} CONFIG.DIN_FROM {7} CONFIG.DIN_WIDTH {8} CONFIG.DIN_FROM {7} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_1]
+connect_bd_net [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins xlslice_1/Din]
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins TD4_vanilla_0/Instr]
+set_property location {2 451 226} [get_bd_cells xlslice_1]
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_nets clk_wiz_clk_out1] [get_bd_cells clk_wiz]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins TD4_vanilla_0/clk]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins blk_mem_gen_0/clka]
+connect_bd_net [get_bd_pins TD4_vanilla_0/Adr] [get_bd_pins blk_mem_gen_0/addra]
 save_bd_design
 launch_simulation
-validate_bd_design -force
-validate_bd_design -force
-save_bd_design
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-open_run synth_1 -name synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-close_design
-open_run impl_1
+make_wrapper -files [get_files C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sources_1/bd/vanilla/vanilla.bd] -top
+add_files -norecurse C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sources_1/bd/vanilla/hdl/vanilla_wrapper.v
+update_compile_order -fileset sources_1
+file mkdir C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sim_1/new/test_1.sv w ]
+add_files -fileset sim_1 C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sim_1/new/test_1.sv
+update_compile_order -fileset sim_1
 launch_simulation
-close_design
-synth_design -rtl -name rtl_1
-write_schematic -format pdf -orientation landscape C:/Users/nekha/OneDrive/ /schematic.pdf
-write_schematic -format pdf -orientation landscape C:/Users/nekha/OneDrive/schematic.pdf
-launch_simulation
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:TD4_vanilla:1.0 [get_ips  vanilla_TD4_vanilla_0_2] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips vanilla_TD4_vanilla_0_2] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/project_1/project_1.srcs/sources_1/bd/vanilla/vanilla.bd]
