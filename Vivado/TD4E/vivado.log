@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Jan  4 12:53:21 2020
+# Process ID: 22448
+# Current directory: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22316 C:\Users\nekha\OneDrive\GitHub\TD4\Vivado\TD4E\TD4E.xpr
+# Log file: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/vivado.log
+# Journal file: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:38 ; elapsed = 00:01:00 . Memory (MB): peak = 873.965 ; gain = 144.887
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:user:core:1.0 - core_0
+Successfully read diagram <design_1> from BD file <C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 953.988 ; gain = 78.848
+set_property location {0.5 52 -112} [get_bd_cells core_0]
+ipx::edit_ip_in_project -upgrade true -name core_v1_0_project -directory C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.tmp/core_v1_0_project c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1006.063 ; gain = 30.059
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nekha/OneDrive/GitHub/TD4/Vivado/ip_repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 1008.453 ; gain = 32.449
+update_compile_order -fileset sources_1
+close_project
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: core
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1113.344 ; gain = 72.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'core' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/core.sv:23]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gen_reg' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:21]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_reg' (1#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'inc_reg' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:35]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'inc_reg' (2#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'ram_controller' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:50]
+	Parameter im_width bound to: 4 - type: integer 
+WARNING: [Synth 8-5788] Register data_to_ram_write_reg in module ram_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'ram_controller' (3#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'source_selector' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:70]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'source_selector' (4#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:90]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:90]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:102]
+INFO: [Synth 8-226] default block is never used [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:112]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:102]
+INFO: [Synth 8-6155] done synthesizing module 'core' (7#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/core.sv:23]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[3]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[2]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[1]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1155.797 ; gain = 115.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1155.797 ; gain = 115.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1155.797 ; gain = 115.422
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:26 . Memory (MB): peak = 1512.547 ; gain = 472.172
+21 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:26 . Memory (MB): peak = 1512.547 ; gain = 472.172
+open_bd_design {C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/design_1.bd}
+set_property location {1 17 -123} [get_bd_cells core_0]
+set_property location {349 -87} [get_bd_intf_ports IO]
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Netlist 29-17] Analyzing 14 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1659.742 ; gain = 144.188
+open_bd_design {C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/design_1.bd}
+save_bd_design
+Wrote  : <C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+synth_design -rtl -name rtl_2
+Command: synth_design -rtl -name rtl_2
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: core
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2132.250 ; gain = 27.816
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'core' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/core.sv:23]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'gen_reg' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:21]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'gen_reg' (1#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'inc_reg' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:35]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'inc_reg' (2#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'ram_controller' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:50]
+	Parameter im_width bound to: 4 - type: integer 
+WARNING: [Synth 8-5788] Register data_to_ram_write_reg in module ram_controller is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:65]
+INFO: [Synth 8-6155] done synthesizing module 'ram_controller' (3#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:50]
+INFO: [Synth 8-6157] synthesizing module 'source_selector' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:70]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'source_selector' (4#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:90]
+	Parameter im_width bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (5#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:90]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:102]
+INFO: [Synth 8-226] default block is never used [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:112]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (6#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/basic_elements.sv:102]
+INFO: [Synth 8-6155] done synthesizing module 'core' (7#1) [C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/new/core.sv:23]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[3]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[2]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[1]
+WARNING: [Synth 8-3331] design ram_controller has unconnected port address[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2169.098 ; gain = 64.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2169.098 ; gain = 64.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2169.098 ; gain = 64.664
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-141] Inserted 4 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-140] Inserted 4 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2275.633 ; gain = 171.199
+20 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2275.633 ; gain = 171.199
+open_bd_design {C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.srcs/sources_1/bd/design_1/design_1.bd}
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+WARNING: [Project 1-478] Design 'synth_1' is stale and will not be used when launching 'impl_1'
+[Sat Jan  4 13:01:47 2020] Launched synth_1...
+Run output will be captured here: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.runs/synth_1/runme.log
+[Sat Jan  4 13:01:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/nekha/OneDrive/GitHub/TD4/Vivado/TD4E/TD4E.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 2282.109 ; gain = 4.328
+current_design rtl_1
+current_design rtl_2
+close_design
+refresh_design
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2283.992 ; gain = 0.000
+current_design rtl_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  4 13:21:37 2020...

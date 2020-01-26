@@ -1,0 +1,5 @@
+basic_elements.sv,systemverilog,xil_defaultlib,../../../bd/design_1/ipshared/f1f1/basic_elements.sv,
+core.sv,systemverilog,xil_defaultlib,../../../bd/design_1/ipshared/f1f1/core.sv,
+design_1_core_0_0.sv,systemverilog,xil_defaultlib,../../../bd/design_1/ip/design_1_core_0_0/sim/design_1_core_0_0.sv,
+design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

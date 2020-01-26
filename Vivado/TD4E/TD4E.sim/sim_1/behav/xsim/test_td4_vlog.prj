@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../TD4E.ip_user_files/bd/design_1/ipshared/f1f1/basic_elements.sv" \
+"../../../../TD4E.ip_user_files/bd/design_1/ipshared/f1f1/core.sv" \
+"../../../../TD4E.ip_user_files/bd/design_1/ip/design_1_core_0_0/sim/design_1_core_0_0.sv" \
+
+verilog xil_defaultlib  \
+"../../../../TD4E.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../TD4E.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+sv xil_defaultlib  \
+"../../../../TD4E.srcs/sim_1/new/test_td4.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

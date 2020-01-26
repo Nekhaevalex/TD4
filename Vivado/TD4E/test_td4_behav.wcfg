@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_td4_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_td4" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="142"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/test_td4/IO_in" type="array">
+      <obj_property name="ElementShortName">IO_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/IO_out" type="array">
+      <obj_property name="ElementShortName">IO_out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">IO_out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/n_reset" type="logic">
+      <obj_property name="ElementShortName">n_reset</obj_property>
+      <obj_property name="ObjectShortName">n_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_mode_r" type="logic">
+      <obj_property name="ElementShortName">to_RAM_mode_r</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_mode_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_mode_w" type="logic">
+      <obj_property name="ElementShortName">to_RAM_mode_w</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_mode_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_page" type="array">
+      <obj_property name="ElementShortName">to_RAM_page[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_page[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_ram_addr" type="array">
+      <obj_property name="ElementShortName">to_RAM_ram_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_ram_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_ram_read" type="array">
+      <obj_property name="ElementShortName">to_RAM_ram_read[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_ram_read[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_RAM_ram_write" type="array">
+      <obj_property name="ElementShortName">to_RAM_ram_write[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_RAM_ram_write[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_ROM_addr" type="array">
+      <obj_property name="ElementShortName">to_ROM_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_ROM_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_ROM_bank" type="array">
+      <obj_property name="ElementShortName">to_ROM_bank[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_ROM_bank[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_ROM_im" type="array">
+      <obj_property name="ElementShortName">to_ROM_im[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_ROM_im[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/to_ROM_instr" type="array">
+      <obj_property name="ElementShortName">to_ROM_instr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">to_ROM_instr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/n_reset" type="logic">
+      <obj_property name="ElementShortName">n_reset</obj_property>
+      <obj_property name="ObjectShortName">n_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_w" type="logic">
+      <obj_property name="ElementShortName">ram_w</obj_property>
+      <obj_property name="ObjectShortName">ram_w</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_r" type="logic">
+      <obj_property name="ElementShortName">ram_r</obj_property>
+      <obj_property name="ObjectShortName">ram_r</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/instr" type="array">
+      <obj_property name="ElementShortName">instr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">instr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/im" type="array">
+      <obj_property name="ElementShortName">im[3:0]</obj_property>
+      <obj_property name="ObjectShortName">im[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/in" type="array">
+      <obj_property name="ElementShortName">in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/out" type="array">
+      <obj_property name="ElementShortName">out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/addr" type="array">
+      <obj_property name="ElementShortName">addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/bank" type="array">
+      <obj_property name="ElementShortName">bank[3:0]</obj_property>
+      <obj_property name="ObjectShortName">bank[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/page" type="array">
+      <obj_property name="ElementShortName">page[3:0]</obj_property>
+      <obj_property name="ObjectShortName">page[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_addr" type="array">
+      <obj_property name="ElementShortName">ram_addr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_addr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_read" type="array">
+      <obj_property name="ElementShortName">ram_read[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_read[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_write" type="array">
+      <obj_property name="ElementShortName">ram_write[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_write[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/A" type="array">
+      <obj_property name="ElementShortName">A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/Im" type="array">
+      <obj_property name="ElementShortName">Im[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Im[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/source" type="array">
+      <obj_property name="ElementShortName">source[3:0]</obj_property>
+      <obj_property name="ObjectShortName">source[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/Out" type="array">
+      <obj_property name="ElementShortName">Out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/PC" type="array">
+      <obj_property name="ElementShortName">PC[3:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_in" type="array">
+      <obj_property name="ElementShortName">ram_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ram_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/select_source" type="array">
+      <obj_property name="ElementShortName">select_source[2:0]</obj_property>
+      <obj_property name="ObjectShortName">select_source[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/result_bus" type="array">
+      <obj_property name="ElementShortName">result_bus[3:0]</obj_property>
+      <obj_property name="ObjectShortName">result_bus[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/carry" type="logic">
+      <obj_property name="ElementShortName">carry</obj_property>
+      <obj_property name="ObjectShortName">carry</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_read_flag" type="logic">
+      <obj_property name="ElementShortName">ram_read_flag</obj_property>
+      <obj_property name="ObjectShortName">ram_read_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/ram_write_flag" type="logic">
+      <obj_property name="ElementShortName">ram_write_flag</obj_property>
+      <obj_property name="ObjectShortName">ram_write_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_A" type="logic">
+      <obj_property name="ElementShortName">sel_A</obj_property>
+      <obj_property name="ObjectShortName">sel_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_B" type="logic">
+      <obj_property name="ElementShortName">sel_B</obj_property>
+      <obj_property name="ObjectShortName">sel_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_Out" type="logic">
+      <obj_property name="ElementShortName">sel_Out</obj_property>
+      <obj_property name="ObjectShortName">sel_Out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_PC" type="logic">
+      <obj_property name="ElementShortName">sel_PC</obj_property>
+      <obj_property name="ObjectShortName">sel_PC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_RAM" type="logic">
+      <obj_property name="ElementShortName">sel_RAM</obj_property>
+      <obj_property name="ObjectShortName">sel_RAM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_Bank" type="logic">
+      <obj_property name="ElementShortName">sel_Bank</obj_property>
+      <obj_property name="ObjectShortName">sel_Bank</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/sel_Page" type="logic">
+      <obj_property name="ElementShortName">sel_Page</obj_property>
+      <obj_property name="ObjectShortName">sel_Page</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/im_width" type="array">
+      <obj_property name="ElementShortName">im_width[31:0]</obj_property>
+      <obj_property name="ObjectShortName">im_width[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group128" type="group">
+      <obj_property name="label">DECODER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/instr" type="array">
+         <obj_property name="ElementShortName">instr[3:0]</obj_property>
+         <obj_property name="ObjectShortName">instr[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/c" type="logic">
+         <obj_property name="ElementShortName">c</obj_property>
+         <obj_property name="ObjectShortName">c</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/src_sel" type="array">
+         <obj_property name="ElementShortName">src_sel[2:0]</obj_property>
+         <obj_property name="ObjectShortName">src_sel[2:0]</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_A" type="logic">
+         <obj_property name="ElementShortName">sel_A</obj_property>
+         <obj_property name="ObjectShortName">sel_A</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_B" type="logic">
+         <obj_property name="ElementShortName">sel_B</obj_property>
+         <obj_property name="ObjectShortName">sel_B</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_Out" type="logic">
+         <obj_property name="ElementShortName">sel_Out</obj_property>
+         <obj_property name="ObjectShortName">sel_Out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_PC" type="logic">
+         <obj_property name="ElementShortName">sel_PC</obj_property>
+         <obj_property name="ObjectShortName">sel_PC</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_RAM" type="logic">
+         <obj_property name="ElementShortName">sel_RAM</obj_property>
+         <obj_property name="ObjectShortName">sel_RAM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_Bank" type="logic">
+         <obj_property name="ElementShortName">sel_Bank</obj_property>
+         <obj_property name="ObjectShortName">sel_Bank</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/sel_Page" type="logic">
+         <obj_property name="ElementShortName">sel_Page</obj_property>
+         <obj_property name="ObjectShortName">sel_Page</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_td4/d1w/design_1_i/core_0/inst/decoder/out" type="array">
+         <obj_property name="ElementShortName">out[9:0]</obj_property>
+         <obj_property name="ObjectShortName">out[9:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
